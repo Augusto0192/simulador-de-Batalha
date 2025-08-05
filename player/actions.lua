@@ -10,8 +10,8 @@ function actions.build()
     actions.list = {}
 
     -- Atacar com espada
-    local swordAttack = {
-        description = "Atacar com o relâmpago.",
+    local Attack = {
+        description="Atacar",
         requirement = nil,
         execute = function(playerData, creatureData)
             -- 1. Definir chance de sucesso
@@ -32,7 +32,7 @@ function actions.build()
                 print(string.format("%s: %s", creatureData.name, utils.getProgressBar(healthRate)))
 
             else
-                print(string.format("%s tentou atacar, mas foi abandonado pelos elementos.", playerData.name))
+                print(string.format("%s %s", playerData.name, player.attackMiss))
             end
         end
     }
@@ -55,7 +55,7 @@ function actions.build()
     }
 
     -- Populate list
-    actions.list[#actions.list + 1] = swordAttack
+    actions.list[#actions.list + 1] = Attack
     actions.list[#actions.list + 1] = regenPotion
 end
 

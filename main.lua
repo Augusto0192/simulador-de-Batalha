@@ -1,20 +1,21 @@
 
 -- Dependencies
 local utils = require("utils")
-local player = require("player.player")
 local playerActions = require("player.actions")
 local colossus = require("boss.colossus")
 local colossusActions = require("boss.actions")
+local player = require("player.hamerHand")
+utils.enableUtf8()
 
 print("escolha seu Guerreiro:", "1- Trovão", "2- Mão de Martelo")
 choiser = utils.ask()
 if choiser == 1 then
-    local player = require("player.tunder")
-elseif coiser == 2 then
-    local player = require("player.hamerHand")
+    player = require("player.tunder")
+else
+    print("então vai de martelo")
 end
 -- Habilitar UTF-8 no terminal
-utils.enableUtf8()
+
 
 -- Header
 utils.printHeader()

@@ -2,6 +2,8 @@ local player = {}
 
 player.name = "Mão de Martélo"
 player.description = "Mestre das Forjas e do fogo"
+player.attackMiss = "Seu martelo parece tão pesado nesse turno, porque não respirar um pouco mais?"
+player.attack = "Martela o martelão!!!"
 
 player.maxHealth = 15
 player.health = 15
