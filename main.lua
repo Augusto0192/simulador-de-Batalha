@@ -6,6 +6,13 @@ local playerActions = require("player.actions")
 local colossus = require("boss.colossus")
 local colossusActions = require("boss.actions")
 
+print("escolha seu Guerreiro:", "1- Trovão", "2- Mão de Martelo")
+choiser = utils.ask()
+if choiser == 1 then
+    local player = require("player.player")
+elseif coiser == 2 then
+    local player = require("player.hamerHand")
+end
 -- Habilitar UTF-8 no terminal
 utils.enableUtf8()
 
@@ -78,4 +85,5 @@ elseif boss.health <= 0 then
     print(string.format("%s prevaleceu e venceu %s.", player.name, boss.name))
     print("Parabéns!!!")
     print()
+
 end
