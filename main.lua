@@ -9,7 +9,7 @@ local colossusActions = require("boss.actions")
 print("escolha seu Guerreiro:", "1- Trovão", "2- Mão de Martelo")
 choiser = utils.ask()
 if choiser == 1 then
-    local player = require("player.player")
+    local player = require("player.tunder")
 elseif coiser == 2 then
     local player = require("player.hamerHand")
 end
