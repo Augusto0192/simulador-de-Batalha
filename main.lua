@@ -10,7 +10,7 @@ utils.enableUtf8()
 print("escolha seu Guerreiro:", "1- Trovão", "2- Mão de Martelo")
 choiser = utils.ask()
 if choiser == 1 then
-    player = require("player.tunder")
+    player = require("player.thunder")
 else
     print("então vai de martelo")
 end
